@@ -1,5 +1,6 @@
 /**@type {import('webpack').Configuration} */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -21,9 +22,24 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader'
+          }
+        ]
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: path.resolve(__dirname, "./public/index.html"),
+      filename: "./index.html"
+    }),
+  ],
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
