@@ -1,0 +1,24 @@
+{
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmartinez8/webpack-react.git"
+  },
+  "keywords": [],
+  "author": "Gustavo Martínez <gustavomartinez1990@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmartinez8/webpack-react/issues"
+  },
+  "homepage": "https://github.com/gmartinez8/webpack-react#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
